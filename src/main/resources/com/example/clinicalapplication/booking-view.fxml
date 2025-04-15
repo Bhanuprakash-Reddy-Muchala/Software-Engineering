@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.clinicalapplication.controllers.BookingController">
+
+    <top>
+        <Label text="Boost Physio Clinic Booking System"
+               style="-fx-font-size: 20px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER" />
+    </top>
+
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <HBox spacing="10">
+                <Label text="Expertise:" />
+                <ComboBox fx:id="expertiseComboBox" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Physiotherapist:" />
+                <ComboBox fx:id="physioComboBox" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Treatment:" />
+                <ComboBox fx:id="treatmentComboBox" prefWidth="200"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Label text="Patient:" />
+                <ComboBox fx:id="patientComboBox" prefWidth="200"/>
+            </HBox>
+
+            <Button fx:id="bookAppointmentButton"
+                    text="Book Appointment"
+                    prefWidth="200" />
+
+            <TextArea fx:id="outputArea"
+                      editable="false"
+                      prefHeight="150"
+                      wrapText="true"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <Button fx:id="backButton"
+                text="Back to Menu"
+                prefWidth="150"
+                BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

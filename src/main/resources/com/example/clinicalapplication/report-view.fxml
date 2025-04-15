@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.clinicalapplication.controllers.ReportViewController">
+
+    <top>
+        <Label text="Clinic Report"
+               style="-fx-font-size: 18px; -fx-font-weight: bold;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <TextArea fx:id="reportArea" editable="false" wrapText="true" prefHeight="400" />
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button text="Refresh Report" fx:id="refreshButton" prefWidth="150"/>
+            <Button text="Back to Menu" fx:id="backButton" prefWidth="150"/>
+        </HBox>
+    </bottom>
+</BorderPane>

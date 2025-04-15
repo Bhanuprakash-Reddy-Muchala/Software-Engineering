@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.clinicalapplication.controllers.MainMenuController"
+      alignment="CENTER" spacing="20">
+
+    <!-- Correct padding format -->
+    <padding>
+        <Insets top="40" right="40" bottom="40" left="40"/>
+    </padding>
+
+    <Label text="Welcome to Boost Physio Clinic"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Button text="Book Appointment" fx:id="bookingButton" prefWidth="200"/>
+    <Button text="View Patients" fx:id="patientsButton" prefWidth="200"/>
+    <Button text="View Bookings" fx:id="bookingsButton" prefWidth="200"/>
+    <Button text="View Report" fx:id="reportButton" prefWidth="200"/>
+</VBox>

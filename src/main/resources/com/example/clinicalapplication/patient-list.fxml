@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.clinicalapplication.controllers.PatientListController">
+
+    <top>
+        <Label text="Registered Patients"
+               style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: black;"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <TableView fx:id="patientTable"
+                   prefWidth="600"
+                   prefHeight="400"
+                   style="-fx-text-fill: black; -fx-background-color: white;">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="100" style="-fx-text-fill: black;"/>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="150" style="-fx-text-fill: black;"/>
+                <TableColumn fx:id="addressColumn" text="Address" prefWidth="200" style="-fx-text-fill: black;"/>
+                <TableColumn fx:id="phoneColumn" text="Phone" prefWidth="150" style="-fx-text-fill: black;"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Button fx:id="addButton" text="Add Patient"/>
+            <Button fx:id="editButton" text="Edit Patient"/>
+            <Button fx:id="deleteButton" text="Delete Patient"/>
+            <Button fx:id="refreshButton" text="Refresh"/>
+            <Button fx:id="backButton" text="Back to Menu"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
